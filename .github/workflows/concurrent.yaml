@@ -1,0 +1,15 @@
+name: concurrent
+on: [push]
+jobs:
+  con1:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "con1"
+      - run: |
+          sleep 120
+  con2:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "con2"
+      - run: |
+          sleep 120
